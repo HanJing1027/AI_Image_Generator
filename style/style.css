@@ -267,10 +267,15 @@ body {
   width: 285px;
   aspect-ratio: 1/1;
 }
-.image-gallery .img-card:hover .download-btn {
+.image-gallery .img-card:hover:not(.loader) .download-btn {
   opacity: 1;
   transform: scale(1);
 }
+.image-gallery .img-card.loader img {
+  box-shadow: none;
+  background-color: #EEE;
+}
+
 .img-card img {
   width: 100%;
   height: 100%;

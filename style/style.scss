@@ -140,13 +140,14 @@ body {
     width       : 285px;
     aspect-ratio: 1 / 1; // 保持圖片比例
 
-    &:hover .download-btn {
+    &:hover:not(.loader) .download-btn {
       opacity  : 1;
       transform: scale(1);
     }
 
-    &.loading {
-      // < ================= coding here
+    &.loader img {
+      box-shadow      : none;
+      background-color: #EEE;
     }
   }
 }

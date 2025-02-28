@@ -23,6 +23,67 @@
     <title>AI Image Generator</title>
   </head>
   <body>
+    <section class="image-generator">
+      <div class="content">
+        <h1>AI 圖像生成器工具</h1>
+        <h4>
+          使用這款基於 JavaScript 的 AI 圖像生成工具，讓文字在一秒內轉化為圖像
+        </h4>
+
+        <form action="#" class="generator-form">
+          <input
+            type="text"
+            class="prompt-input"
+            placeholder="描述您想看到的..."
+            required
+          />
+
+          <div class="control">
+            <select class="img-quantity">
+              <option value="1">1 Image</option>
+              <option value="2">2 Image</option>
+              <option value="3">3 Image</option>
+              <option value="4" selected>4 Image</option>
+            </select>
+            <button class="generator-btn">圖像生成</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="image-gallery">
+      <!-- 01 -->
+      <div class="img-card">
+        <img src="images/img-1.jpg" alt="image" />
+        <a href="#" class="download-btn">
+          <i class="bx bx-download"></i>
+        </a>
+      </div>
+
+      <!-- 02 -->
+      <div class="img-card loading">
+        <img src="images/img-2.jpg" alt="image" />
+        <a href="#" class="download-btn">
+          <i class="bx bx-download"></i>
+        </a>
+      </div>
+
+      <!-- 03 -->
+      <div class="img-card">
+        <img src="images/img-3.jpg" alt="image" />
+        <a href="#" class="download-btn">
+          <i class="bx bx-download"></i>
+        </a>
+      </div>
+
+      <!-- 04 -->
+      <div class="img-card">
+        <img src="images/img-4.jpg" alt="image" />
+        <a href="#" class="download-btn">
+          <i class="bx bx-download"></i>
+        </a>
+      </div>
+    </section>
     <!-- js -->
     <script type="module" src="js/app.js"></script>
   </body>

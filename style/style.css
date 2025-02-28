@@ -308,4 +308,43 @@ body {
   color: #121212;
   font-size: 1.125rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 760px) {
+  .content h1 {
+    font-size: 1.8rem;
+  }
+  .content h4 {
+    font-size: 1rem;
+  }
+  .content .generator-form {
+    display: block;
+    margin-top: 28px;
+    height: 52px;
+  }
+  .generator-form .control {
+    height: 40px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .control .img-quantity {
+    color: #FFF;
+  }
+  .control .img-quantity option {
+    color: #121212;
+  }
+  .image-gallery {
+    margin: 25px 0;
+  }
+  .image-gallery .img-card:not(.loader) .download-btn {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 500px) {
+  .image-gallery .img-card {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */

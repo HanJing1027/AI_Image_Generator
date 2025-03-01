@@ -55,6 +55,7 @@ body {
     font-weight   : 500;
     text-align    : center;
     letter-spacing: 2px;
+    line-height   : 1.5;
     margin-top    : 15px;
   }
 
@@ -141,8 +142,9 @@ body {
     aspect-ratio: 1 / 1; // 保持圖片比例
 
     &:hover:not(.loader) .download-btn {
-      opacity  : 1;
-      transform: scale(1);
+      pointer-events: auto;
+      opacity       : 1;
+      transform     : scale(1);
     }
 
     &.loader img {
@@ -174,9 +176,10 @@ body {
     background-color: #FFF;
     text-decoration : none;
 
-    opacity   : 0;
-    transform : scale(.5);
-    transition: all .2s ease-in-out;
+    opacity       : 0;
+    transform     : scale(.5);
+    transition    : all .2s ease-in-out;
+    pointer-events: none;
 
     &:hover {
       background-color: #F4F4F4;

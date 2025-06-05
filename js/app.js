@@ -77,7 +77,6 @@ const generateAiImgs = async (userPrompt, userQuantity) => {
   try {
     const response = await fetch(config.OPENAI_API_URL, options);
     const data = await response.json();
-    console.log(data);
 
     updateImgCard(data.data);
   } catch (err) {

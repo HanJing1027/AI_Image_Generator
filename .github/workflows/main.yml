@@ -27,10 +27,15 @@ jobs:
           mkdir -p js
           cat > js/config.js << 'EOF'
           export const config = {
-            OPENAI_API_URL: `${{ secrets.OPENAI_API_URL }}`,
-            OPENAI_API_KEY: `${{ secrets.OPENAI_API_KEY }}`,
+            OPENAI_API_URL: '${{ secrets.OPENAI_API_URL }}',
+            OPENAI_API_KEY: '${{ secrets.OPENAI_API_KEY }}',
           };
           EOF
+
+      - name: Verify config file creation
+        run: |
+          ls -la js/
+          cat js/config.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
